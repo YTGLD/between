@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "age=0": { "model": "moonbetween:furit_seed0" },
+    "age=1": { "model": "moonbetween:furit_seed0" },
+    "age=2": { "model": "moonbetween:furit_seed1" },
+    "age=3": { "model": "moonbetween:furit_seed2" }
+  }
+}

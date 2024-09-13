@@ -1,0 +1,127 @@
+{
+  "pools": [
+    {
+      "name": "moon_sap_ball_loot_wight",
+      "rolls":{
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "entryName": "octine_nugget",
+          "name": "thebetweenlands:items_misc",
+          "weight": 3,
+          "functions": [
+            {
+              "conditions": [],
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "conditions": [],
+              "function": "set_data",
+              "data": 42
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "entryName": "syrmorite_nugget",
+          "name": "thebetweenlands:items_misc",
+          "weight": 2,
+          "functions": [
+            {
+              "conditions": [],
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "conditions": [],
+              "function": "set_data",
+              "data": 41
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "entryName": "valonite_splinter",
+          "name": "thebetweenlands:items_misc",
+          "weight": 1,
+          "functions": [
+            {
+              "conditions": [],
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "conditions": [],
+              "function": "set_data",
+              "data": 43
+            }
+          ]
+        },
+
+        {
+          "type": "item",
+          "name": "moonbetween:between_soul_stone",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:soul_eye",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:crown",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:soul_cube",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:between_book",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:between_soul",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:between_crystal",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:app_seed",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:furit",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:amout_food",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "age=0": { "model": "moonbetween:shroom0" },
+    "age=1": { "model": "moonbetween:shroom0" },
+    "age=2": { "model": "moonbetween:shroom1" },
+    "age=3": { "model": "moonbetween:shroom2" }
+  }
+}

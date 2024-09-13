@@ -1,0 +1,147 @@
+tooltip.moon.charm.bonus=Consume experience to achieve you never decay
+item.moonbetween.sap_ball.name=Sap Orb
+
+tooltip.moon.sap_dirt_ball.bonus=Attack with additional slow effects,But it will consume your experience
+item.moonbetween.sap_dirt_ball.name=Sap Dirt Ball
+
+tooltip.moon.yellow_dotted_fungus.bonus=you will obtain damage bonus ,But it will consume your decay level
+item.moonbetween.yellow_dotted_fungus.name=Rot yellow dotted fungus
+
+
+tooltip.moon.rotbulb_ball.bonus=The damage you cause to sludge mob increases by 70%
+item.moonbetween.rotbulb_ball.name=Rotbulb ball
+
+tooltip.moon.brick_flower.bonus=Consuming experience to increase the effect of restoring health
+item.moonbetween.brick_flower.name=Brick Flower
+
+tooltip.moon.rotbulb_head.bonus=Defeat damage every 15 seconds
+item.moonbetween.rotbulb_head.name=Rotbulb Head
+
+
+tooltip.moon.edge_shroom.bonus=Using any food will increase decay value, but you will obtain hunger effects of food
+item.moonbetween.edge_shroom.name=Old Edge Shroom
+
+
+tooltip.moon.between_soul_stone.bonus=Whenever you kill a entity, you will increase health and reduce experience points
+item.moonbetween.between_soul_stone.name=Between Soul Stone
+
+tooltip.moon.soul_eye.bonus=night vision
+item.moonbetween.soul_eye.name=Soul Eye
+
+
+tooltip.moon.crown.bonus=+2 Looting Level
+item.moonbetween.crown.name=Between crown
+
+
+
+tooltip.moon.soul_cube.bonus=+10 Max Health
+item.moonbetween.soul_cube.name=Soul cube
+
+
+
+tooltip.moon.between_book.bonus=Use experience to offset some damage
+item.moonbetween.between_book.name=Between book
+
+
+tooltip.moon.between_soul.bonus=increase speed
+item.moonbetween.between_soul.name=Between Soul
+
+
+tooltip.moon.between_crystal.bonus=increase swim speed
+item.moonbetween.between_crystal.name=Between crystal
+
+
+
+tooltip.moon.lightning.bonus=Attacking has a probability of Lightning strikes creatures
+item.moonbetween.lightning.name=Lightning strikes on steep cliffs
+
+
+tooltip.moon.bone.bonus=Increase hunger value for food recovery
+item.moonbetween.bone.name=Molar bone
+
+
+tooltip.moon.talisman.bonus=Increase experience drops
+item.moonbetween.talisman.name=Cliff rock talisman
+
+
+tooltip.moon.fruit.bonus=Increase saturation value for food recovery
+item.moonbetween.fruit.name=Cliff Fruit
+
+
+tooltip.moon.apple.bonus=Increase damage to Pyrad
+item.moonbetween.apple.name=Wood Apple Candle
+
+
+tooltip.moon.swamphead.bonus=Increase damage to Swamp Hag
+item.moonbetween.swamphead.name=Crying Skull
+
+
+
+tooltip.moon.seed.bonus=Increase damage to Wight
+item.moonbetween.seed.name=Ghost Fruit Pod
+
+
+
+
+tooltip.moon.monsterstone.bonus=Strengthen the Chiromaw tamed near you
+item.moonbetween.monsterstone.name=Wing Hand Strange Stone
+
+
+tooltip.moon.snailpearl.bonus=Snail like creatures drop three times more debris
+item.moonbetween.snailpearl.name=Snail Pearl
+
+
+tooltip.moon.fire.bonus=Improve excavation speed, especially with wooden blocks
+item.moonbetween.fire.name=Forest Torch
+
+
+tooltip.moon.volatile_malevolence.bonus=Kill creatures to generate Ghost Hearts, pick up to gain buffs
+item.moonbetween.volatile_malevolence.name=volatile malevolence eye
+
+
+tooltip.moon.compost_seed.bonus=It can be planted swamp soil
+item.moonbetween.compost_seed.name=Compost seed
+
+item.moonbetween.shroom_seed.name=shroom seed
+
+item.moonbetween.m_seed.name=shroom seed
+item.moonbetween.app_seed.name=app seed
+
+
+
+item.moonbetween.sap_seed.name=sap seed
+item.moonbetween.furit.name=furit
+
+tooltip.moon.moss.bonus=Consume your own durability to slightly increase the healing effect
+item.moonbetween.moss.name=moss
+
+
+tooltip.moon.obelisk.bonus=Increase repulsion resistance and reduce durability when hit
+item.moonbetween.obelisk.name=obelisk
+
+tooltip.moon.fire_orb.bonus=Reduce flame damage and reduce durability when dealing corresponding damage
+item.moonbetween.fire_orb.name=fire orb
+
+tooltip.moon.fangs.bonus=Reduce experience to obtain bloodsucking
+item.moonbetween.fangs.name=fangs
+
+tooltip.moon.frog.bonus=+1 DAMAGE
+item.moonbetween.frog.name=frog
+
+tooltip.moon.cheese.bonus=If the biological drop is food, the number of drops doubles, but the experience of drops decreases by 70%
+item.moonbetween.cheese.name=cheese
+
+tooltip.moon.luck_amout.bonus=Creatures no longer drop experience, but they have a 100% chance of dropping a ground dry swamp reed
+item.moonbetween.luck_amout.name=luck  amout
+
+tooltip.moon.bone_ball.bonus=+10% critical strike damage
+item.moonbetween.bone_ball.name=bone ball
+
+tooltip.moon.die_bone.bonus=+17.5% critical strike damage
+item.moonbetween.die_bone.name=die bone
+
+tooltip.moon.amout_food.bonus=+1 Amout Slot
+tooltip.moon.amout_food.bonus1=Max size: 3
+
+item.moonbetween.amout_food.name=amout food
+

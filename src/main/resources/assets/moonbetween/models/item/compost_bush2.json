@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "moonbetween:blocks/compost_bush03",
+		"1": "moonbetween:blocks/compost_bush13",
+		"particle": "moonbetween:blocks/compost_bush03"
+	},
+	"elements": [
+		{
+			"from": [4, -2, 4],
+			"to": [13, 7, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 9, 9], "texture": "#0"},
+				"east": {"uv": [0, 0, 9, 9], "texture": "#0"},
+				"south": {"uv": [0, 0, 9, 9], "texture": "#0"},
+				"west": {"uv": [0, 0, 9, 9], "texture": "#0"},
+				"up": {"uv": [0, 0, 9, 9], "texture": "#1"},
+				"down": {"uv": [0, 0, 9, 9], "texture": "#0"}
+			}
+		}
+	]
+}

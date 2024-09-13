@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "age=0": { "model": "moonbetween:soultree0" },
+    "age=1": { "model": "moonbetween:soultree0" },
+    "age=2": { "model": "moonbetween:soultree1" },
+    "age=3": { "model": "moonbetween:soultree2" }
+  }
+}

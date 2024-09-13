@@ -1,0 +1,96 @@
+{
+  "pools": [
+    {
+      "name": "moon_sap_ball_monster",
+      "rolls":{
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "moonbetween:monsterstone",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:snailpearl",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:fire",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:sap_seed",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "entryName": "octine_nugget",
+          "name": "thebetweenlands:items_misc",
+          "weight": 3,
+          "functions": [
+            {
+              "conditions": [],
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "conditions": [],
+              "function": "set_data",
+              "data": 42
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "entryName": "syrmorite_nugget",
+          "name": "thebetweenlands:items_misc",
+          "weight": 2,
+          "functions": [
+            {
+              "conditions": [],
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "conditions": [],
+              "function": "set_data",
+              "data": 41
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "entryName": "valonite_splinter",
+          "name": "thebetweenlands:items_misc",
+          "weight": 1,
+          "functions": [
+            {
+              "conditions": [],
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "conditions": [],
+              "function": "set_data",
+              "data": 43
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

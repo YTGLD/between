@@ -1,0 +1,21 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "moonbetween:blocks/sap_seed",
+		"particle": "moonbetween:blocks/sap_seed"
+	},
+	"elements": [
+		{
+			"from": [5, 0, 5],
+			"to": [11, 6, 11],
+			"faces": {
+				"north": {"uv": [4, 4, 16, 16], "texture": "#0"},
+				"east": {"uv": [4, 4, 16, 16], "texture": "#0"},
+				"south": {"uv": [4, 4, 16, 16], "texture": "#0"},
+				"west": {"uv": [4, 4, 16, 16], "texture": "#0"},
+				"up": {"uv": [3, 0, 15, 12], "texture": "#0"},
+				"down": {"uv": [4, 4, 16, 16], "texture": "#0"}
+			}
+		}
+	]
+}

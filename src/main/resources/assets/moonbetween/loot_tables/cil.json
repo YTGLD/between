@@ -1,0 +1,121 @@
+{
+  "pools": [
+    {
+      "name": "moon_sap_ball_cil",
+      "rolls":{
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "entryName": "octine_nugget",
+          "name": "thebetweenlands:items_misc",
+          "weight": 3,
+          "functions": [
+            {
+              "conditions": [],
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "conditions": [],
+              "function": "set_data",
+              "data": 42
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "entryName": "syrmorite_nugget",
+          "name": "thebetweenlands:items_misc",
+          "weight": 2,
+          "functions": [
+            {
+              "conditions": [],
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "conditions": [],
+              "function": "set_data",
+              "data": 41
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "entryName": "valonite_splinter",
+          "name": "thebetweenlands:items_misc",
+          "weight": 1,
+          "functions": [
+            {
+              "conditions": [],
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "conditions": [],
+              "function": "set_data",
+              "data": 43
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:lightning",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:bone",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:talisman",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:fruit",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:apple",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:swamphead",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:furit",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:bone_ball",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:seed",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
