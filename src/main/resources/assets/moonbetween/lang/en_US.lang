@@ -140,6 +140,14 @@ item.moonbetween.bone_ball.name=bone ball
 tooltip.moon.die_bone.bonus=+17.5% critical strike damage
 item.moonbetween.die_bone.name=die bone
 
+tooltip.moon.rage.bonus=Restore health and increase experience
+tooltip.moon.rage.bonus.a=-10% heal
+item.moonbetween.rage.name=rage
+
+tooltip.moon.bright_green.bonus=Damage received at full health+150%
+tooltip.moon.bright_green.bonus.a=+60% heal
+item.moonbetween.bright_green.name=bright green
+
 tooltip.moon.amout_food.bonus=+1 Amout Slot
 tooltip.moon.amout_food.bonus1=Max size: 3
 

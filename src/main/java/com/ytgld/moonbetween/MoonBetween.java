@@ -128,6 +128,10 @@ public class MoonBetween
     @ObjectHolder(MODID+":die_bone")
     public static final Item die_bone= null;
 
+    @ObjectHolder(MODID+":rage")
+    public static final Item rage= null;
+    @ObjectHolder(MODID+":bright_green")
+    public static final Item bright_green= null;
 
 
     @ObjectHolder(MODID+":compost_bush")
@@ -191,6 +195,13 @@ public class MoonBetween
         event.getRegistry().register(new luck_amout());
         event.getRegistry().register(new bone_ball());
         event.getRegistry().register(new die_bone());
+        event.getRegistry().register(new rage());
+        event.getRegistry().register(new bright_green());
+
+
+
+
+
 
     }
     @SubscribeEvent
@@ -253,6 +264,8 @@ public class MoonBetween
         ModelLoader.setCustomModelResourceLocation(luck_amout, 0, new ModelResourceLocation(new ResourceLocation(MoonBetween.MODID, "luck_amout"), "inventory"));
         ModelLoader.setCustomModelResourceLocation(bone_ball, 0, new ModelResourceLocation(new ResourceLocation(MoonBetween.MODID, "bone_ball"), "inventory"));
         ModelLoader.setCustomModelResourceLocation(die_bone, 0, new ModelResourceLocation(new ResourceLocation(MoonBetween.MODID, "die_bone"), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(rage, 0, new ModelResourceLocation(new ResourceLocation(MoonBetween.MODID, "rage"), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(bright_green, 0, new ModelResourceLocation(new ResourceLocation(MoonBetween.MODID, "bright_green"), "inventory"));
 
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(compost_bush), 0, new ModelResourceLocation(new ResourceLocation(MoonBetween.MODID, "compost_bush"), "inventory"));
         ModelLoader.setCustomModelResourceLocation(compost_seed, 0, new ModelResourceLocation(new ResourceLocation(MoonBetween.MODID, "compost_seed"), "inventory"));

@@ -98,7 +98,8 @@ public class Evt {
                     stack.getItem() instanceof soul_cube ||
                     stack.getItem() instanceof soul_eye ||
                     stack.getItem() instanceof yellow_dotted_fungus ||
-                    stack.getItem() instanceof cheese)
+                    stack.getItem() instanceof cheese||
+                    stack.getItem() instanceof rage)
             {
                 if (stack.getItemDamage()!= 0){
                     if (player.experienceLevel > 0) {
@@ -162,6 +163,25 @@ public class Evt {
 
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+    @SubscribeEvent
+    public void BetweenSoul(LivingDeathEvent event) {
+        if (event.getSource().getTrueSource() instanceof EntityPlayer) {
+            EntityPlayer entity = (EntityPlayer) event.getSource().getTrueSource();
+            IEquipmentCapability cap = entity.getCapability(CapabilityRegistry.CAPABILITY_EQUIPMENT, null);
+            if (cap != null) {
+                IInventory inv = cap.getInventory(EnumEquipmentInventory.RING);
+                for (int i = 0; i < inv.getSizeInventory(); i++) {
+                    ItemStack stack = inv.getStackInSlot(i);
+                    if (stack.getItem() == MoonBetween.BetweenSoul) {
+                        entity.heal(4);
+                        ItemRing.removeXp(entity,2);
+                        stack.setItemDamage(stack.getItemDamage() + 1);
+
                     }
                 }
             }
@@ -245,6 +265,25 @@ public class Evt {
 
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @SubscribeEvent
+    public void bright_green(LivingHurtEvent event) {
+        if (event.getEntity() instanceof EntityPlayer) {
+            EntityPlayer entity = (EntityPlayer) event.getEntity();
+            IEquipmentCapability cap = entity.getCapability(CapabilityRegistry.CAPABILITY_EQUIPMENT, null);
+            if (cap != null) {
+                IInventory inv = cap.getInventory(EnumEquipmentInventory.RING);
+                for (int i = 0; i < inv.getSizeInventory(); i++) {
+                    ItemStack stack = inv.getStackInSlot(i);
+                    if (stack.getItem() == MoonBetween.bright_green) {
+                        if (entity.getHealth()==entity.getMaxHealth()){
+                            event.setAmount(event.getAmount()*2.5f);
+                            ItemRing.removeXp(entity,3);
                         }
                     }
                 }
@@ -388,6 +427,41 @@ public class Evt {
                             event.setAmount(event.getAmount() * 1.45F);
                             ItemRing.removeXp(player,1);
                         }
+                    }
+                }
+            }
+        }
+    }
+    @SubscribeEvent
+    public void bright_green(LivingHealEvent event) {
+        if (event.getEntity() instanceof EntityPlayer) {
+            EntityPlayer player = (EntityPlayer) event.getEntity();
+            IEquipmentCapability cap = player.getCapability(CapabilityRegistry.CAPABILITY_EQUIPMENT, null);
+            if (cap != null) {
+                IInventory inv = cap.getInventory(EnumEquipmentInventory.RING);
+                for (int i = 0; i < inv.getSizeInventory(); i++) {
+                    ItemStack stack = inv.getStackInSlot(i);
+                    if (stack.getItem() == MoonBetween.bright_green) {
+                        event.setAmount(event.getAmount()*1.6f);
+                    }
+                }
+            }
+        }
+    }
+    @SubscribeEvent
+    public void rage(LivingHealEvent event) {
+        if (event.getEntity() instanceof EntityPlayer) {
+            EntityPlayer player = (EntityPlayer) event.getEntity();
+            IEquipmentCapability cap = player.getCapability(CapabilityRegistry.CAPABILITY_EQUIPMENT, null);
+            if (cap != null) {
+                IInventory inv = cap.getInventory(EnumEquipmentInventory.RING);
+                for (int i = 0; i < inv.getSizeInventory(); i++) {
+                    ItemStack stack = inv.getStackInSlot(i);
+                    if (stack.getItem() == MoonBetween.rage) {
+                        player.addExperience(1);
+                        event.setAmount(event.getAmount()*0.9f);
+                        stack.setItemDamage(stack.getItemDamage() + 1);
+
                     }
                 }
             }

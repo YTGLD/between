@@ -128,13 +128,21 @@ tooltip.moon.cheese.bonus=如果生物掉落物是食物，那么掉落数量翻
 
 item.moonbetween.cheese.name=奶酪
 
-tooltip.moon.luck_amout.bonus=生物不再掉落经验，但是它们有100%的概率掉落一个干沼泽芦苇
+tooltip.moon.luck_amout.bonus=生物不再掉落经验，但是它们会概率掉落一个干沼泽芦苇
 item.moonbetween.luck_amout.name=金镶玉护符
 
-tooltip.moon.bone_ball.bonus=+10% 暴击伤害
+tooltip.moon.rage.bonus=恢复生命值增加经验
+tooltip.moon.rage.bonus.a=-百分之十恢复
+item.moonbetween.rage.name=生之芒果护符
+
+tooltip.moon.bright_green.bonus=满生命值时受到的伤害加百分之一百五十
+tooltip.moon.bright_green.bonus.a=+百分之六十 恢复
+item.moonbetween.bright_green.name=痛苦牛油果护符
+
+tooltip.moon.bone_ball.bonus=+百分之十暴击伤害
 item.moonbetween.bone_ball.name=粘骨球
 
-tooltip.moon.die_bone.bonus=+17.5% 暴击伤害
+tooltip.moon.die_bone.bonus=+百分之十七点五暴击伤害
 item.moonbetween.die_bone.name=活化之骨
 
 tooltip.moon.amout_food.bonus=+1 护符栏位(暂时)

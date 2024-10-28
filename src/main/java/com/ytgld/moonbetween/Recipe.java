@@ -51,8 +51,12 @@ public class Recipe {
         if (fire instanceof IAnimatorRepairable) {AnimatorRecipe.addRecipe(new ToolRepairAnimatorRecipe((IAnimatorRepairable) cheese));}
         if (fire instanceof IAnimatorRepairable) {AnimatorRecipe.addRecipe(new ToolRepairAnimatorRecipe((IAnimatorRepairable) luck_amout));}
         if (fire instanceof IAnimatorRepairable) {AnimatorRecipe.addRecipe(new ToolRepairAnimatorRecipe((IAnimatorRepairable) die_bone));}
+        if (fire instanceof IAnimatorRepairable) {AnimatorRecipe.addRecipe(new ToolRepairAnimatorRecipe((IAnimatorRepairable) rage));}
+        if (fire instanceof IAnimatorRepairable) {AnimatorRecipe.addRecipe(new ToolRepairAnimatorRecipe((IAnimatorRepairable) bright_green));}
 
         AnimatorRecipe.addRecipe(new AnimatorRecipe(new ItemStack(bone_ball),32,50,new ItemStack(die_bone)));
+        AnimatorRecipe.addRecipe(new AnimatorRecipe(new ItemStack(Fruit),32,50,new ItemStack(rage)));
+        AnimatorRecipe.addRecipe(new AnimatorRecipe(new ItemStack(rage),32,50,new ItemStack(bright_green)));
 
 
         PestleAndMortarRecipe.addRecipe(ItemMisc.EnumItemMisc.LOOT_SCRAPS.create(1), new ItemStack(bone_ball));
