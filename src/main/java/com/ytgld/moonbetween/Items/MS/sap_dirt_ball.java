@@ -14,14 +14,14 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import thebetweenlands.api.item.IAnimatorRepairable;
 import thebetweenlands.client.handler.ItemTooltipHandler;
 import thebetweenlands.common.registries.KeyBindRegistry;
-
+import thebetweenlands.client.tab.BLCreativeTabs;
 import javax.annotation.Nullable;
 import java.util.List;
 
 public class sap_dirt_ball extends ItemRing implements IAnimatorRepairable {
     public sap_dirt_ball(){
         this.setRegistryName(new ResourceLocation(MoonBetween.MODID, "sap_dirt_ball"))
-                .setCreativeTab(CreativeTabs.MISC)
+                .setCreativeTab(BLCreativeTabs.ITEMS)
                 .setUnlocalizedName(MoonBetween.MODID + ".sap_dirt_ball").setMaxDamage(128);
     }
     @Override

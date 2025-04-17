@@ -134,6 +134,16 @@
           "type": "item",
           "name": "moonbetween:amout_food",
           "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:candle_off",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:stone_mushroom",
+          "weight": 1
         }
       ]
     }

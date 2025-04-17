@@ -1,6 +1,9 @@
 package com.ytgld.moonbetween;
 
 import com.ytgld.moonbetween.Items.MS.*;
+import com.ytgld.moonbetween.Items.dung.candle_on;
+import com.ytgld.moonbetween.Items.dung.stone_mushroom;
+import com.ytgld.moonbetween.Items.ghost.ghost_cage;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockLog;
 import net.minecraft.entity.EntityLiving;
@@ -52,6 +55,13 @@ public class Evt {
             LootPool pool = new LootPool(new LootEntry[]{lootEntryTable}, new LootCondition[0], rolls, rolls, Loot.LOOT_TABLE.toString());
             event.getTable().addPool(pool);
         }
+        if (event.getName().equals(LootTableRegistry.SCROLL)) {
+            LootEntryTable lootEntryTable = new LootEntryTable(Loot.SCROLL, 1, 0, new LootCondition[0], Loot.SCROLL.toString());
+            RandomValueRange rolls = new RandomValueRange(1, 1);
+            LootPool pool = new LootPool(new LootEntry[]{lootEntryTable}, new LootCondition[0], rolls, rolls, Loot.SCROLL.toString());
+            event.getTable().addPool(pool);
+        }
+
         if (event.getName().equals(LootTableRegistry.WIGHT_FORTRESS_CHEST)) {
             LootEntryTable lootEntryTable = new LootEntryTable(Loot.LOOT_WIGHT, 1, 0, new LootCondition[0], Loot.LOOT_WIGHT.toString());
             RandomValueRange rolls = new RandomValueRange(1, 1);
@@ -78,6 +88,29 @@ public class Evt {
             event.getTable().addPool(pool);
         }
     }
+
+    @SubscribeEvent
+    public void hu(LivingHurtEvent event){
+        candle_on.hurt(event);
+    }
+
+    @SubscribeEvent
+    public void hu(LivingEntityUseItemEvent.Finish event){
+        stone_mushroom.Finish(event);
+    }
+    @SubscribeEvent
+    public void hu(PlayerInteractEvent.RightClickItem event){
+        stone_mushroom.RightClickItem(event);
+    }
+    @SubscribeEvent
+    public void hu(LivingDeathEvent event){
+        ghost_cage.die(event);
+    }
+
+
+
+
+
 
     @SubscribeEvent
     public void PlayerInteractEvent(PlayerInteractEvent.RightClickItem event){

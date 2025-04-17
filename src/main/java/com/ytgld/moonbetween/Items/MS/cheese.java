@@ -14,7 +14,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import thebetweenlands.api.item.IAnimatorRepairable;
 import thebetweenlands.client.handler.ItemTooltipHandler;
 import thebetweenlands.common.registries.KeyBindRegistry;
-
+import thebetweenlands.client.tab.BLCreativeTabs;
 import javax.annotation.Nullable;
 import java.util.List;
 
@@ -61,7 +61,7 @@ public class cheese  extends ItemRing implements IAnimatorRepairable {
 
     public cheese(){
         this   .setRegistryName(new ResourceLocation(MoonBetween.MODID, "cheese"))
-                .setCreativeTab(CreativeTabs.MISC)
+                .setCreativeTab(BLCreativeTabs.ITEMS)
                 .setMaxDamage(128)
                 .setUnlocalizedName(MoonBetween.MODID + ".cheese");
 

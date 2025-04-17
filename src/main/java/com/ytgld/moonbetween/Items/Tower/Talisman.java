@@ -20,14 +20,14 @@ import thebetweenlands.api.item.IEquippable;
 import thebetweenlands.client.handler.ItemTooltipHandler;
 import thebetweenlands.common.capability.equipment.EnumEquipmentInventory;
 import thebetweenlands.common.registries.KeyBindRegistry;
-
+import thebetweenlands.client.tab.BLCreativeTabs;
 import javax.annotation.Nullable;
 import java.util.List;
 
 public class Talisman extends Item implements IEquippable , IAnimatorRepairable {
     public Talisman(){
         this.setRegistryName(new ResourceLocation(MoonBetween.MODID, "talisman"))
-                .setCreativeTab(CreativeTabs.MISC)
+                .setCreativeTab(BLCreativeTabs.ITEMS)
                 .setUnlocalizedName(MoonBetween.MODID + ".talisman");
         this.setMaxStackSize(1);
     }@Override

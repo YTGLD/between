@@ -135,6 +135,33 @@ tooltip.moon.rage.bonus=恢复生命值增加经验
 tooltip.moon.rage.bonus.a=-百分之十恢复
 item.moonbetween.rage.name=生之芒果护符
 
+
+
+tooltip.moon.candle_off.bonus=燃烧附近的生物
+tooltip.moon.candle_off.bonus.a=瞬间烧死灰烬之魂
+item.moonbetween.candle_off.name=熄灭的余烬蜡烛
+
+item.moonbetween.candle_on.name=点燃的余烬蜡烛
+tooltip.moon.candle_on.bonus=增加对燃烧的生物的伤害
+
+item.moonbetween.ghost_cage.name=石蜡幽魂笼
+tooltip.moon.ghost_cage.bonus=杀死生物会造成范围伤害
+
+item.moonbetween.stone_mushroom.name=石头蘑菇
+tooltip.moon.stone_mushroom.bonus=吃下黄点蘑菇会恢复大量饥饿值和饱食度
+tooltip.moon.stone_mushroom.bonus.b=但是会减少大量经验值
+tooltip.moon.stone_mushroom.bonus.a=同时恢复生命值，并且你可以时刻食用黄点蘑菇
+
+
+item.moonbetween.luminous_mushroom.name=夜光菇
+tooltip.moon.luminous_mushroom.bonus=夜视，但是会损耗耐久
+tooltip.moon.luminous_mushroom.bonus.a=可以吃下球盖菇来增加耐久值
+
+
+item.moonbetween.water_mushroom.name=水下真菌
+tooltip.moon.water_mushroom.bonus=极大提高水下速度
+
+
 tooltip.moon.bright_green.bonus=满生命值时受到的伤害加百分之一百五十
 tooltip.moon.bright_green.bonus.a=+百分之六十 恢复
 item.moonbetween.bright_green.name=痛苦牛油果护符

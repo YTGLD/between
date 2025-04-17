@@ -13,14 +13,14 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import thebetweenlands.client.handler.ItemTooltipHandler;
 import thebetweenlands.common.registries.KeyBindRegistry;
-
+import thebetweenlands.client.tab.BLCreativeTabs;
 import javax.annotation.Nullable;
 import java.util.List;
 
 public class fire_orb extends IdolHead {
     public fire_orb(){
         this.setRegistryName(new ResourceLocation(MoonBetween.MODID, "fire_orb"))
-                .setCreativeTab(CreativeTabs.MISC)
+                .setCreativeTab(BLCreativeTabs.ITEMS)
                 .setUnlocalizedName(MoonBetween.MODID + ".fire_orb");
         this.setMaxStackSize(1);
 

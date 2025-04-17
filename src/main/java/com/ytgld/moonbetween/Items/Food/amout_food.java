@@ -17,6 +17,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import thebetweenlands.api.capability.IEquipmentCapability;
 import thebetweenlands.client.handler.ItemTooltipHandler;
+import thebetweenlands.client.tab.BLCreativeTabs;
 import thebetweenlands.common.registries.CapabilityRegistry;
 
 import javax.annotation.Nullable;
@@ -25,7 +26,7 @@ import java.util.List;
 public class amout_food extends FoodItem {
     public amout_food(){
         this.setRegistryName(new ResourceLocation(MoonBetween.MODID, "amout_food"))
-                .setCreativeTab(CreativeTabs.MISC)
+                .setCreativeTab(BLCreativeTabs.ITEMS)
                 .setUnlocalizedName(MoonBetween.MODID + ".amout_food");
 
     }

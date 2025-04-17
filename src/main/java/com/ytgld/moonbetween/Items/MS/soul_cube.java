@@ -19,7 +19,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import thebetweenlands.api.item.IAnimatorRepairable;
 import thebetweenlands.client.handler.ItemTooltipHandler;
 import thebetweenlands.common.registries.KeyBindRegistry;
-
+import thebetweenlands.client.tab.BLCreativeTabs;
 import javax.annotation.Nullable;
 import java.util.List;
 import java.util.UUID;
@@ -87,7 +87,7 @@ public class soul_cube extends ItemRing implements IAnimatorRepairable {
     }
     public soul_cube(){
        this  .setRegistryName(new ResourceLocation(MoonBetween.MODID, "soul_cube"))
-                .setCreativeTab(CreativeTabs.MISC)
+                .setCreativeTab(BLCreativeTabs.ITEMS)
                 .setUnlocalizedName(MoonBetween.MODID + ".soul_cube").setMaxDamage(1024);
 
     }@Override

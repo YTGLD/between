@@ -12,6 +12,7 @@ public class Loot {
     public static final ResourceLocation CIL = RegistrationHandler.create("cil");
     public static final ResourceLocation monster = RegistrationHandler.create("monster");
     public static final ResourceLocation idol = RegistrationHandler.create("idol");
+    public static final ResourceLocation SCROLL = RegistrationHandler.create("item_scroll");
     public static void registerLootTables() {
         RegistrationHandler.LOOT_TABLES.forEach(LootTableList::register);
     }

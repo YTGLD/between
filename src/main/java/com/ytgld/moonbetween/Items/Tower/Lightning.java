@@ -20,14 +20,14 @@ import thebetweenlands.api.item.IEquippable;
 import thebetweenlands.client.handler.ItemTooltipHandler;
 import thebetweenlands.common.capability.equipment.EnumEquipmentInventory;
 import thebetweenlands.common.registries.KeyBindRegistry;
-
+import thebetweenlands.client.tab.BLCreativeTabs;
 import javax.annotation.Nullable;
 import java.util.List;
 
 public class Lightning extends Item implements IEquippable , IAnimatorRepairable {
     public Lightning(){
         this.setRegistryName(new ResourceLocation(MoonBetween.MODID, "lightning"))
-                .setCreativeTab(CreativeTabs.MISC)
+                .setCreativeTab(BLCreativeTabs.ITEMS)
                 .setUnlocalizedName(MoonBetween.MODID + ".lightning");
         this.setMaxStackSize(1).setMaxDamage(100);
     }@Override

@@ -14,7 +14,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import thebetweenlands.api.item.IAnimatorRepairable;
 import thebetweenlands.client.handler.ItemTooltipHandler;
 import thebetweenlands.common.registries.KeyBindRegistry;
-
+import thebetweenlands.client.tab.BLCreativeTabs;
 import javax.annotation.Nullable;
 import java.util.List;
 
@@ -60,7 +60,7 @@ public class luck_amout extends ItemRing implements IAnimatorRepairable {
 
     public luck_amout(){
         this .setRegistryName(new ResourceLocation(MoonBetween.MODID, "luck_amout"))
-                .setCreativeTab(CreativeTabs.MISC)
+                .setCreativeTab(BLCreativeTabs.ITEMS)
                 .setMaxDamage(256)
                 .setUnlocalizedName(MoonBetween.MODID + ".luck_amout");
 

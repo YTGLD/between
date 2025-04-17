@@ -1,0 +1,213 @@
+{
+  "pools": [
+    {
+      "name": "moon_sap_ball",
+      "rolls":{
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "moonbetween:between_book",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:between_crystal",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:between_soul",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:between_soul_stone",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:brick_flower",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:bright_green",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:cheese",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:crown",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:die_bone",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:edge_shroom",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:luck_amout",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:rage",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:rotbulb_ball",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:rotbulb_head",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:sap_ball",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:sap_dirt_ball",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:soul_cube",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:soul_eye",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:yellow_dotted_fungus",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:Apple",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:Bone",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:bone_ball",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:Fruit",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:Lightning",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:Seed",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:SwampHead",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:Talisman",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:fire",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:monsterstone",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:snailpearl",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:fangs",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:fire_orb",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:frog",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:moss",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:obelisk",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:candle_off",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:candle_on",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:amout_food",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:stone_mushroom",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "moonbetween:ghost_cage",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

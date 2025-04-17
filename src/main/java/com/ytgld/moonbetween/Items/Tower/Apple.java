@@ -20,14 +20,14 @@ import thebetweenlands.api.item.IEquippable;
 import thebetweenlands.client.handler.ItemTooltipHandler;
 import thebetweenlands.common.capability.equipment.EnumEquipmentInventory;
 import thebetweenlands.common.registries.KeyBindRegistry;
-
+import thebetweenlands.client.tab.BLCreativeTabs;
 import javax.annotation.Nullable;
 import java.util.List;
 
 public class Apple extends Item implements IEquippable, IAnimatorRepairable {
     public Apple(){
         this.setRegistryName(new ResourceLocation(MoonBetween.MODID, "apple"))
-                .setCreativeTab(CreativeTabs.MISC)
+                .setCreativeTab(BLCreativeTabs.ITEMS)
                 .setUnlocalizedName(MoonBetween.MODID + ".apple");
         this.setMaxStackSize(1);
 

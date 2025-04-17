@@ -6,9 +6,15 @@ import com.ytgld.moonbetween.Items.Food.amout_food;
 import com.ytgld.moonbetween.Items.IdolHeadStatue.*;
 import com.ytgld.moonbetween.Items.MS.*;
 import com.ytgld.moonbetween.Items.Tower.*;
+import com.ytgld.moonbetween.Items.dung.candle_off;
+import com.ytgld.moonbetween.Items.dung.candle_on;
+import com.ytgld.moonbetween.Items.dung.stone_mushroom;
+import com.ytgld.moonbetween.Items.ghost.ghost_cage;
 import com.ytgld.moonbetween.Items.misc.fire;
 import com.ytgld.moonbetween.Items.misc.monsterstone;
 import com.ytgld.moonbetween.Items.misc.snailpearl;
+import com.ytgld.moonbetween.Items.treasure.Luminous_mushroom;
+import com.ytgld.moonbetween.Items.treasure.Water_mushroom;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -41,6 +47,7 @@ public class MoonBetween
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(new Evt());
+        MinecraftForge.EVENT_BUS.register(new NewEvt());
         ItemRegistry.ITEMS.add(EdgeShroom);
     }
     @Mod.EventHandler
@@ -127,11 +134,20 @@ public class MoonBetween
     public static final Item bone_ball= null;
     @ObjectHolder(MODID+":die_bone")
     public static final Item die_bone= null;
-
     @ObjectHolder(MODID+":rage")
     public static final Item rage= null;
     @ObjectHolder(MODID+":bright_green")
     public static final Item bright_green= null;
+    @ObjectHolder(MODID+":candle_off")
+    public static final Item candle_off= null;
+    @ObjectHolder(MODID+":candle_on")
+    public static final Item candle_on= null;
+
+    @ObjectHolder(MODID+":ghost_cage")
+    public static final Item ghost_cage= null;
+    @ObjectHolder(MODID+":stone_mushroom")
+    public static final Item stone_mushroom= null;
+
 
 
     @ObjectHolder(MODID+":compost_bush")
@@ -148,6 +164,17 @@ public class MoonBetween
     public static final Block furit_seed= null;
 
 
+
+
+
+    /**
+     * 这里是4月17号开始
+     */
+    @ObjectHolder(MODID+":luminous_mushroom")
+    public static final Item luminous_mushroom= null;
+
+    @ObjectHolder(MODID+":water_mushroom")
+    public static final Item water_mushroom= null;
 
 
     @SubscribeEvent
@@ -171,7 +198,11 @@ public class MoonBetween
         event.getRegistry().register(new fire_orb());
         event.getRegistry().register(new fangs());
         event.getRegistry().register(new frog());
+        event.getRegistry().register(new candle_on());
         event.getRegistry().register(new amout_food());
+
+        event.getRegistry().register(new ghost_cage());
+        event.getRegistry().register(new stone_mushroom());
 
 
         event.getRegistry().register(new sap_ball());
@@ -198,6 +229,7 @@ public class MoonBetween
         event.getRegistry().register(new rage());
         event.getRegistry().register(new bright_green());
 
+        event.getRegistry().register(new candle_off());
 
 
 
@@ -217,6 +249,11 @@ public class MoonBetween
         event.getRegistry().register(new fire());
 
 
+
+
+
+        event.getRegistry().register(new Luminous_mushroom());
+        event.getRegistry().register(new Water_mushroom());
 
     }
     @SideOnly(Side.CLIENT)
@@ -266,6 +303,26 @@ public class MoonBetween
         ModelLoader.setCustomModelResourceLocation(die_bone, 0, new ModelResourceLocation(new ResourceLocation(MoonBetween.MODID, "die_bone"), "inventory"));
         ModelLoader.setCustomModelResourceLocation(rage, 0, new ModelResourceLocation(new ResourceLocation(MoonBetween.MODID, "rage"), "inventory"));
         ModelLoader.setCustomModelResourceLocation(bright_green, 0, new ModelResourceLocation(new ResourceLocation(MoonBetween.MODID, "bright_green"), "inventory"));
+
+        ModelLoader.setCustomModelResourceLocation(candle_off, 0, new ModelResourceLocation(new ResourceLocation(MoonBetween.MODID, "candle_off"), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(candle_on, 0, new ModelResourceLocation(new ResourceLocation(MoonBetween.MODID, "candle_on"), "inventory"));
+
+        ModelLoader.setCustomModelResourceLocation(ghost_cage, 0, new ModelResourceLocation(new ResourceLocation(MoonBetween.MODID, "ghost_cage"), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(stone_mushroom, 0, new ModelResourceLocation(new ResourceLocation(MoonBetween.MODID, "stone_mushroom"), "inventory"));
+
+
+        /*
+          4.17
+         */
+        ModelLoader.setCustomModelResourceLocation(luminous_mushroom, 0, new ModelResourceLocation(new ResourceLocation(MoonBetween.MODID,
+                        "luminous_mushroom"), "inventory"));
+
+        ModelLoader.setCustomModelResourceLocation(water_mushroom, 0, new ModelResourceLocation(new ResourceLocation(MoonBetween.MODID,
+                "water_mushroom"), "inventory"));
+
+
+
+
 
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(compost_bush), 0, new ModelResourceLocation(new ResourceLocation(MoonBetween.MODID, "compost_bush"), "inventory"));
         ModelLoader.setCustomModelResourceLocation(compost_seed, 0, new ModelResourceLocation(new ResourceLocation(MoonBetween.MODID, "compost_seed"), "inventory"));

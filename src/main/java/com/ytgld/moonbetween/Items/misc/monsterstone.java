@@ -28,14 +28,14 @@ import thebetweenlands.common.capability.equipment.EnumEquipmentInventory;
 import thebetweenlands.common.entity.mobs.EntityChiromawTame;
 import thebetweenlands.common.registries.CapabilityRegistry;
 import thebetweenlands.common.registries.KeyBindRegistry;
-
+import thebetweenlands.client.tab.BLCreativeTabs;
 import javax.annotation.Nullable;
 import java.util.List;
 
 public class monsterstone extends Item implements IEquippable , IAnimatorRepairable {
     public monsterstone(){
         this.setRegistryName(new ResourceLocation(MoonBetween.MODID, "monsterstone"))
-                .setCreativeTab(CreativeTabs.MISC)
+                .setCreativeTab(BLCreativeTabs.ITEMS)
                 .setUnlocalizedName(MoonBetween.MODID + ".monsterstone");
         this.setMaxStackSize(1);
         this.setMaxDamage(3600);

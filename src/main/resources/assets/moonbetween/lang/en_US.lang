@@ -144,6 +144,38 @@ tooltip.moon.rage.bonus=Restore health and increase experience
 tooltip.moon.rage.bonus.a=-10% heal
 item.moonbetween.rage.name=rage
 
+
+
+tooltip.moon.candle_off.bonus=Burning nearby organisms
+tooltip.moon.candle_off.bonus.a=Instantly burn the soul of ashes to death
+item.moonbetween.candle_off.name=candle off
+
+item.moonbetween.candle_on.name=candle on
+tooltip.moon.candle_on.bonus=Increase damage to burning organisms
+
+item.moonbetween.ghost_cage.name=Paraffin Ghost Cage
+tooltip.moon.ghost_cage.bonus=IKilling a creature will release 1-3 Chaos Souls
+
+
+
+
+item.moonbetween.stone_mushroom.name=stone mushroom
+tooltip.moon.stone_mushroom.bonus=Eating yellow spotted mushrooms will restore a large amount of hunger and satiety
+tooltip.moon.stone_mushroom.bonus.a=At the same time, restore health and you can always consume yellow spotted mushrooms
+tooltip.moon.stone_mushroom.bonus.b=But it will reduce a lot of experience points
+
+
+
+
+item.moonbetween.luminous_mushroom.name=luminous mushroom
+tooltip.moon.luminous_mushroom.bonus=Night vision, but it will wear out durability
+tooltip.moon.luminous_mushroom.bonus.a=You can eat the bulbous mushroom to increase its durability
+
+
+item.moonbetween.water_mushroom.name=water mushroom
+tooltip.moon.water_mushroom.bonus=Dramatically increases underwater speed
+
+
 tooltip.moon.bright_green.bonus=Damage received at full health+150%
 tooltip.moon.bright_green.bonus.a=+60% heal
 item.moonbetween.bright_green.name=bright green

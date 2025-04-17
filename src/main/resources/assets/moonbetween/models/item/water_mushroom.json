@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "moonbetween:items/water_mushroom"
+  }
+}

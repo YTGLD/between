@@ -22,14 +22,14 @@ import thebetweenlands.client.handler.ItemTooltipHandler;
 import thebetweenlands.common.capability.equipment.EnumEquipmentInventory;
 import thebetweenlands.common.registries.CapabilityRegistry;
 import thebetweenlands.common.registries.KeyBindRegistry;
-
+import thebetweenlands.client.tab.BLCreativeTabs;
 import javax.annotation.Nullable;
 import java.util.List;
 
 public class snailpearl extends Item implements IEquippable, IAnimatorRepairable {
     public snailpearl(){
         this.setRegistryName(new ResourceLocation(MoonBetween.MODID, "snailpearl"))
-                .setCreativeTab(CreativeTabs.MISC)
+                .setCreativeTab(BLCreativeTabs.ITEMS)
                 .setUnlocalizedName(MoonBetween.MODID + ".snailpearl");
         this.setMaxStackSize(1);
 

@@ -14,7 +14,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import thebetweenlands.api.item.IAnimatorRepairable;
 import thebetweenlands.client.handler.ItemTooltipHandler;
 import thebetweenlands.common.registries.KeyBindRegistry;
-
+import thebetweenlands.client.tab.BLCreativeTabs;
 import javax.annotation.Nullable;
 import java.util.List;
 
@@ -63,7 +63,7 @@ public class bright_green extends ItemRing implements IAnimatorRepairable {
 
     public bright_green(){
         this   .setRegistryName(new ResourceLocation(MoonBetween.MODID, "bright_green"))
-                .setCreativeTab(CreativeTabs.MISC)
+                .setCreativeTab(BLCreativeTabs.ITEMS)
                 .setUnlocalizedName(MoonBetween.MODID + ".bright_green");
 
     }

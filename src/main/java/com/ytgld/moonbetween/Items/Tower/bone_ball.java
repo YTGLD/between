@@ -20,14 +20,14 @@ import thebetweenlands.api.item.IEquippable;
 import thebetweenlands.client.handler.ItemTooltipHandler;
 import thebetweenlands.common.capability.equipment.EnumEquipmentInventory;
 import thebetweenlands.common.registries.KeyBindRegistry;
-
+import thebetweenlands.client.tab.BLCreativeTabs;
 import javax.annotation.Nullable;
 import java.util.List;
 
 public class bone_ball extends Item implements IEquippable, IAnimatorRepairable {
     public bone_ball(){
         this.setRegistryName(new ResourceLocation(MoonBetween.MODID, "bone_ball"))
-                .setCreativeTab(CreativeTabs.MISC)
+                .setCreativeTab(BLCreativeTabs.ITEMS)
                 .setUnlocalizedName(MoonBetween.MODID + ".bone_ball");
         this.setMaxStackSize(1);
 

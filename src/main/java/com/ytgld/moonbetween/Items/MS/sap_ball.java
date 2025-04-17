@@ -20,14 +20,14 @@ import thebetweenlands.client.handler.ItemTooltipHandler;
 import thebetweenlands.common.capability.decay.DecayStats;
 import thebetweenlands.common.registries.CapabilityRegistry;
 import thebetweenlands.common.registries.KeyBindRegistry;
-
+import thebetweenlands.client.tab.BLCreativeTabs;
 import javax.annotation.Nullable;
 import java.util.List;
 
 public class sap_ball extends ItemRing implements IAnimatorRepairable {
     public sap_ball(){
         this.setRegistryName(new ResourceLocation(MoonBetween.MODID, "sap_ball"))
-                .setCreativeTab(CreativeTabs.MISC)
+                .setCreativeTab(BLCreativeTabs.ITEMS)
                 .setUnlocalizedName(MoonBetween.MODID + ".sap_ball");
     }
     @Override

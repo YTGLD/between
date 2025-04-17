@@ -2,6 +2,11 @@ package com.ytgld.moonbetween;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import net.minecraft.world.WorldServer;
+import net.minecraft.world.storage.loot.LootContext;
+import net.minecraft.world.storage.loot.LootTable;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import thebetweenlands.api.item.IAnimatorRepairable;
@@ -10,6 +15,10 @@ import thebetweenlands.common.recipe.animator.ToolRepairAnimatorRecipe;
 import thebetweenlands.common.recipe.misc.AnimatorRecipe;
 import thebetweenlands.common.recipe.misc.CompostRecipe;
 import thebetweenlands.common.recipe.mortar.PestleAndMortarRecipe;
+import thebetweenlands.common.registries.ItemRegistry;
+import thebetweenlands.common.registries.LootTableRegistry;
+
+import java.util.List;
 
 import static com.ytgld.moonbetween.MoonBetween.*;
 
@@ -58,6 +67,19 @@ public class Recipe {
         AnimatorRecipe.addRecipe(new AnimatorRecipe(new ItemStack(Fruit),32,50,new ItemStack(rage)));
         AnimatorRecipe.addRecipe(new AnimatorRecipe(new ItemStack(rage),32,50,new ItemStack(bright_green)));
 
+        AnimatorRecipe.addRecipe(new AnimatorRecipe(new ItemStack(candle_off),32,50,new ItemStack(candle_on)));
+        AnimatorRecipe.addRecipe(new AnimatorRecipe(ItemMisc.EnumItemMisc.SCROLL.create(1), 16, 16, Loot.SCROLL) {
+            @Override
+            public ItemStack onAnimated(World world, BlockPos pos, ItemStack stack) {
+                LootTable lootTable = world.getLootTableManager().getLootTableFromLocation(LootTableRegistry.SCROLL);
+                LootContext.Builder lootBuilder = (new LootContext.Builder((WorldServer) world));
+                List<ItemStack> loot = lootTable.generateLootForPools(world.rand, lootBuilder.build());
+                if(!loot.isEmpty()) {
+                    return loot.get(world.rand.nextInt(loot.size()));
+                }
+                return ItemStack.EMPTY;
+            }
+        });
 
         PestleAndMortarRecipe.addRecipe(ItemMisc.EnumItemMisc.LOOT_SCRAPS.create(1), new ItemStack(bone_ball));
         PestleAndMortarRecipe.addRecipe(ItemMisc.EnumItemMisc.LOOT_SCRAPS.create(1), new ItemStack(cheese));
@@ -86,6 +108,14 @@ public class Recipe {
         PestleAndMortarRecipe.addRecipe(ItemMisc.EnumItemMisc.LOOT_SCRAPS.create(1), new ItemStack(snailpearl));
         PestleAndMortarRecipe.addRecipe(ItemMisc.EnumItemMisc.LOOT_SCRAPS.create(1), new ItemStack(fire));
         PestleAndMortarRecipe.addRecipe(ItemMisc.EnumItemMisc.LOOT_SCRAPS.create(1), new ItemStack(luck_amout));
+
+
+        PestleAndMortarRecipe.addRecipe(ItemMisc.EnumItemMisc.LOOT_SCRAPS.create(1), new ItemStack(luminous_mushroom));
+        PestleAndMortarRecipe.addRecipe(ItemMisc.EnumItemMisc.LOOT_SCRAPS.create(1), new ItemStack(water_mushroom));
+
+
+        CompostRecipe.addRecipe(50, 12000, luminous_mushroom);
+        CompostRecipe.addRecipe(50, 12000, water_mushroom);
 
 
         CompostRecipe.addRecipe(25, 12000, compost_seed);

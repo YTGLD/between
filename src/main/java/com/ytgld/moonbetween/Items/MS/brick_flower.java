@@ -14,7 +14,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import thebetweenlands.api.item.IAnimatorRepairable;
 import thebetweenlands.client.handler.ItemTooltipHandler;
 import thebetweenlands.common.registries.KeyBindRegistry;
-
+import thebetweenlands.client.tab.BLCreativeTabs;
 import javax.annotation.Nullable;
 import java.util.List;
 
@@ -61,7 +61,7 @@ public class brick_flower extends ItemRing implements IAnimatorRepairable {
 
     public brick_flower(){
       this   .setRegistryName(new ResourceLocation(MoonBetween.MODID, "brick_flower"))
-                .setCreativeTab(CreativeTabs.MISC)
+                .setCreativeTab(BLCreativeTabs.ITEMS)
                 .setUnlocalizedName(MoonBetween.MODID + ".brick_flower");
 
     }

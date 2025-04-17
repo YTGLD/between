@@ -20,7 +20,7 @@ import thebetweenlands.client.handler.ItemTooltipHandler;
 import thebetweenlands.common.capability.equipment.EnumEquipmentInventory;
 import thebetweenlands.common.item.farming.ItemPlantableSeeds;
 import thebetweenlands.common.registries.KeyBindRegistry;
-
+import thebetweenlands.client.tab.BLCreativeTabs;
 import javax.annotation.Nullable;
 import java.util.List;
 
@@ -30,7 +30,7 @@ public class Seed extends ItemPlantableSeeds implements IEquippable , IAnimatorR
             return MoonBetween.soulseed.getDefaultState();
         });
         this.setRegistryName(new ResourceLocation(MoonBetween.MODID, "seed"))
-                .setCreativeTab(CreativeTabs.MISC)
+                .setCreativeTab(BLCreativeTabs.ITEMS)
                 .setUnlocalizedName(MoonBetween.MODID + ".seed");
         this.setMaxStackSize(1);
 

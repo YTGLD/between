@@ -11,6 +11,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import thebetweenlands.client.handler.ItemTooltipHandler;
+import thebetweenlands.client.tab.BLCreativeTabs;
 import thebetweenlands.common.item.farming.ItemPlantableSeeds;
 
 import javax.annotation.Nullable;
@@ -22,7 +23,7 @@ public class m_seed extends ItemPlantableSeeds {
             return MoonBetween.shroom.getDefaultState();
         });
         this.setRegistryName(new ResourceLocation(MoonBetween.MODID, "m_seed"))
-                .setCreativeTab(CreativeTabs.MISC)
+                .setCreativeTab(BLCreativeTabs.ITEMS)
                 .setUnlocalizedName(MoonBetween.MODID + ".m_seed");
         this.setMaxStackSize(64);
     }
